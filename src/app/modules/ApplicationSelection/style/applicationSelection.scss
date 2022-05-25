@@ -1,0 +1,51 @@
+$AppSquareSize: 200px;
+.AppSelection {
+    justify-content: space-evenly;
+    display: flex !important;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+.AppPane {
+    cursor: pointer;
+    border: solid;
+    min-height: $AppSquareSize;
+    min-width: $AppSquareSize;
+    max-width: $AppSquareSize;
+    max-height: $AppSquareSize;
+    height: $AppSquareSize;
+    border-radius: 10%;
+    background-size: contain;
+    margin: 1%;
+}
+
+.ShowOnMouseOver {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    border-radius: 10%;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.ShowOnMouseOver:hover {
+    opacity: 1;
+}
+
+.AppPaneTitle {
+    display: flex;
+    height: fit-content;
+    font-size: 18px;
+    justify-content: center;
+}
+
+.ApplicationSelection .notify {
+    display: none;
+}
+
+.appButton.ApplicationSelection {
+    margin-top: 10px;
+}

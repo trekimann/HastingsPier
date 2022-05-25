@@ -1,0 +1,13 @@
+.VideoPane {
+    height: 100%;
+    border: none;
+}
+
+.sources {
+    width: inherit;
+    display: inline-flex;
+}
+
+button.sources {
+    width: fit-content;
+}

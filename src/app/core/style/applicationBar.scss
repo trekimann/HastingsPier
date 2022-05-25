@@ -1,0 +1,101 @@
+.applicationBar {
+    min-width: 110px;
+    height: calc(100vh - 23px);
+    display: inline-flex;
+    flex-flow: column;
+    background-color: $tertiaryColour;
+    text-align: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.appButton {
+    border-radius: 20%;
+    min-height: 85px;
+    height: 85px;
+    min-width: 85px;
+    width: 85px;
+    border: solid;
+    display: flex;
+    align-self: center;
+    text-align: center;
+    background-size: contain;
+    cursor: pointer;
+    opacity: 0.7;
+    justify-content: flex-end;
+}
+
+.appButton:hover {
+    opacity: 1;
+}
+
+.CollapseBar {
+    background: red;
+    display: flex;
+    font-size: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.activeApp {
+    border-color: green;
+    opacity: 1;
+}
+
+.notifyCount {
+    display: flex;
+    height: 30px;
+    width: 30px;
+    align-self: flex-end;
+    font-size: 20px;
+    border: solid;
+    border-radius: 50%;
+    justify-content: center;
+    background-color: rgb(25, 132, 18);
+    flex-flow: column;
+    left: 10px;
+    position: relative;
+    top: 10px;
+}
+
+.closeApp {
+    display: flex;
+    top: 15px;
+    right: -82px;
+    background-color: black;
+    max-height: 20px;
+    min-height: 20px;
+    min-width: 20px;
+    max-width: 20px;
+    border-radius: 50%;
+    border-color: white;
+    border: solid;
+    justify-content: center;
+    padding-top: 2px;
+    opacity: 0.5;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.closeApp:hover {
+    opacity: 1;
+}
+
+.notifyList {
+    position: absolute;
+    margin-top: 70px;
+    background-color: black;
+    padding: 1px;
+    border: solid;
+    z-index: 2;
+}
+
+// .notifyCount:hover+.notifyList {
+//     display: inline-grid;
+// }
+// .notifyList:hover {
+//     display: inline-grid;
+// }
+.notifyLine {
+    display: flex;
+}
